@@ -1,0 +1,15 @@
+My motivation to take this course and therefore learn high-performance computing is to have the tools to be able to participate in research in the future. I enjoy learning in the classroom but I want to be able to apply what I have learned to the outside world. Also, I think high-performance computing is extremely interesting, so when I saw this course was being added, I had to take it. Looking at the other assignments posted on the google drive, I can say that I will be learning a ton. I am excited to be in this class and look forward to the rest of the semster.
+
+HPC is very new to me so I have two goals: 
+1. Learn as much as possible
+2. Be as curious as possible
+
+A third goal, not necessarily related to this course, is to get comfortable using Linux for as many classes as I can. The majority of my classes should be easy to switch over. The only problem I see is when I need to use excel for my business analytics classes.
+
+I plan to practice the skills for this course everyday. As an athlete, I know how important daily practice is, especially for something new. Most of this practice will be getting used to the workflow. I am already familiar with most of the terminal commands. 
+
+Reproducible research starts with a good experiment design and in this case a good file structure. Having a dedicated data folder that stores the raw data allows for a way to check results and check to see if the original data has been altered. Treating data as a read-only file and only allowing programs to create new files protects the integrity and also the reproducibility of the research. A config folder gives anyone trying to reproduce the results the exact environment conditions for the experiment. This prevents a newer scientific package version from producing different results than expected. Reproducible research also makes the researcher’s life easier. Compiling a process flow into a script file allows for easy rerun of calculations weeks for months later.
+
+Well documented code is crucial for everyone’s sanity. I had a professor in high school refuse to help debug code if it was not documented properly. In a computational research context, well documented code allows someone else to understand your code. This is good if you need help debugging but also shows where possible errors could lie in your code. Having a README markdown file explaining the process of the research pipeline gives someone else exploring your research a high level overview.
+
+I’ve had a lot of fun working with Linux so far. I’m surprised that I’ve had very few problems so far. Although I know now that I have said that has probably cursed my machine. I like how fast everything seems. Applications feel snappy and downloading Rstudio or Vscode was extremely easy. Everything just works. Apart from the timezone quirk when switching between operating systems, there have not been any hiccups. 
