@@ -34,4 +34,15 @@ c13d459b5caa702ff7e1f26fe44b8ad7  GCF_000005845.2_ASM584v2_genomic.fna.gz
 
 All files intact
 
+### HPC Bash Aliases
+alias u='cd ..;clear;pwd;ls -alFh --group-directories-first'
+Go to parent directory, clear the terminal, print the working directory, and show all files (long way, human readable) grouping directories at the start of the listed files
+
+alias d='cd -;clear;pwd;ls -alFh --group-directories-first'
+Go to child directory, clear the terminal, print the working directory, and show all files (long way, human readable) grouping directories at the start of the listed files
+
+alias ll='ls -alFh --group-directories-first'
+Show all files (long way, human readable) grouping directories at the start of the listed files
+
 ### Reflection
+Suprisingly, everything worked the frist time! The ftp CLI and FileZilla were easy to use. Any problem I ran into, I created myself with typos or not reading the documentation fully.
