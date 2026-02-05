@@ -23,6 +23,19 @@ get GCF_000005845.2_ASM584v2_genomic.fna.gz
 get GCF_000005845.2_ASM584v2_genomic.gff.gz
 quit
 
+### Add files to HPC using sftp
+(local machine)
+cd ~/workspace/git-repos/SUPERCOMPUTING/assignments/assignment_02/data
+sftp incullicott@bora.sciclone.wm.edu
+
+(HPC)
+cd /sciclone/home/incullicott/SUPERCOMPUTING/assignments/assignment_02/data
+mput GCF_000005845.2_ASM584v2_genomic.fna.gz GCF_000005845.2_ASM584v2_genomic.gff.gz
+md5sum GCF_000005845.2_ASM584v2_genomic.fna.gz
+md5sum GCF_000005845.2_ASM584v2_genomic.gff.gz
+exit
+
+
 ### Verify File Integrity
 (local machine)
 c13d459b5caa702ff7e1f26fe44b8ad7  GCF_000005845.2_ASM584v2_genomic.fna.gz
