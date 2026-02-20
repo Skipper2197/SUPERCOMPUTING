@@ -1,0 +1,8 @@
+#!/bin/bash
+set -ueo pipefail
+
+# assign first script parameter to the variable "name"
+name=$1
+
+# send "name" to stdout appended to "Hello, "
+echo "Hello, $name!"
