@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-
-# print the first and last line of a file
-head -n 1  $1
-tail -n 1  $1
