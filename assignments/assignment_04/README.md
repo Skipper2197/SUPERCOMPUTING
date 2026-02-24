@@ -15,8 +15,58 @@ which first_last # ~/programs/first_last
 ~~~bash
 nano install_gh.sh
 chmod +x ~/programs/install_gh.sh
+
+# install_gh.sh                                                                        
+#!/bin/bash
+set -ueo pipefail
+
+# make sure ~/programs exists
+DIR="$HOME/programs"
+mkdir -p "$DIR"
+cd "$DIR"
+
+# download gh tarball
+GH="gh_2.74.2_linux_amd64.tar.gz"
+wget "https://github.com/cli/cli/releases/download/v2.74.2/$GH"
+
+# extract tarball
+tar -xzvf $GH
+
+# move to programs dir
+mv gh_2.74.2_linux_amd64/bin/gh .
+
+# cleanup
+rm -rf gh_2.74.2_linux_amd64 $GH
+
+# sanity check
+echo "gh installed to $DIR"
+
 gh auth login # already logged in
 nano install_seqtk.sh
+
+install_seqtk.sh
+#!/bin/bash
+set -euo pipefail
+
+# make sure programs dir exists
+DIR="$HOME/programs"
+mkdir -p "$DIR"
+cd "$DIR"
+
+# clone repo
+git clone https://github.com/lh3/seqtk.git
+mv seqtk seqtk_
+cd seqtk_
+make
+
+# move files
+mv seqtk ../
+cd "$DIR"
+rm -rf seqtk_
+
+# sanity check
+echo "seqtk installed to $DIR"
+
 chmod +x install_seqtk.sh
 ~~~
 ### TASK 7
