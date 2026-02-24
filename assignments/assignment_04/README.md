@@ -15,7 +15,7 @@ which first_last # ~/programs/first_last
 ~~~bash
 nano install_gh.sh
 chmod +x ~/programs/install_gh.sh
-
+------------------------------------------------------
 # install_gh.sh                                                                        
 #!/bin/bash
 set -ueo pipefail
@@ -40,11 +40,12 @@ rm -rf gh_2.74.2_linux_amd64 $GH
 
 # sanity check
 echo "gh installed to $DIR"
-
+----------------------------------------------------
 gh auth login # already logged in
-nano install_seqtk.sh
 
-install_seqtk.sh
+nano install_seqtk.sh
+----------------------------------------------------
+# install_seqtk.sh
 #!/bin/bash
 set -euo pipefail
 
@@ -66,7 +67,7 @@ rm -rf seqtk_
 
 # sanity check
 echo "seqtk installed to $DIR"
-
+---------------------------------------------------
 chmod +x install_seqtk.sh
 ~~~
 ### TASK 7
