@@ -43,4 +43,4 @@ nano run_all.sh
 chmod +x run_all.sh
 ~~~
 ### Reflection
-Guess who corrupted their $PATH file and so all bash commands would not work? Guess who is also going to be super careful from now on about adding a colon to the export command?
+Guess who corrupted their $PATH file and so all bash commands would not work? Guess who is also going to be super careful from now on about adding a colon to the export command? This was the most challenging aspect of this assignment. On the other hand, it was extrmemely cool to use seqtk and understand how it works. That program made it much easier to work with fasta files. $PATH stores absolute paths to programs that are installed already or that we have installed. This allows us to use those programs anywhere without having to call the absolute path because bash is already looking through the $PATH variable
