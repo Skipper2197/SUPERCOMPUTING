@@ -2,9 +2,12 @@
 
 CSV="data/SraRunTable.csv"
 
+module load sratools
+
 # get just headers and download using fasterq-dump
 tail -n +2 "$CSV" | cut -d ',' -f1 | while read FILE; do
-	fasterq-dump "$FILE" --outdir data/raw/ --split-files --skip-technical
+	fasterq-dump "$FILE" --outdir ./data/raw/ --split-files --skip-technical
+	echo "$FILE"
 done
 
 # download dog genome
